@@ -1,0 +1,141 @@
+.slide-img-container {
+  margin: 0 5rem 0 5rem;
+}
+
+.each-slide {
+  display: flex;
+  width: 100%;
+}
+
+.each-slide > div {
+  width: 100%;
+}
+
+.each-slide > div img {
+  max-height: 750px;
+  min-height: 750px;
+  width: 100%;
+  object-fit: contain;
+  margin-left: auto !important;
+}
+.slider-content {
+  position: absolute;
+  top: 5rem;
+  margin-left: 3rem;
+  background: rgba(36, 35, 35, 0.5);
+  width: 500px;
+  padding: 20px;
+}
+.slider-caption {
+  color: #f1f1f1;
+}
+
+.caption-title {
+  margin-bottom: 10px;
+}
+
+.caption-title h1 {
+  color: #ffffff;
+  font-size: 200%;
+  text-shadow: 2px 5px 5px RGBA(0, 0, 0, 1);
+  line-height: 1.5;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: inherit;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.caption-content {
+  text-shadow: 2px 5px 5px rgba(0, 0, 0, 1);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-align: left;
+}
+
+.caption-content p {
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-size: 112.5%;
+  text-shadow: 2px 5px 5px RGBA(0, 0, 0, 1);
+  line-height: 1.5;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: inherit;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.each-slide > div img:hover {
+  cursor: grab;
+}
+
+.react-slideshow-container .default-nav {
+  display: flex;
+  margin: 5rem;
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 1000px) {
+  .each-slide {
+    height: 500px;
+  }
+
+  .slider-content {
+    width: 500px;
+  }
+
+  .caption-title h1 {
+    font-size: 150%;
+  }
+
+  .caption-content p {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 800px) {
+  .each-slide {
+    height: 500px;
+  }
+
+  .slider-content {
+    width: 450px;
+  }
+
+  .caption-title h1 {
+    font-size: 100%;
+  }
+
+  .caption-content p {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .each-slide {
+    height: 500px;
+  }
+
+  .each-slide .slider-content {
+    width: 40vh;
+    margin-left: 20px;
+  }
+
+  .caption-title h1 {
+    font-size: 100%;
+  }
+
+  .caption-content p {
+    font-size: 80%;
+  }
+}

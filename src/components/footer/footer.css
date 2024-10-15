@@ -1,0 +1,20 @@
+.footer {
+  background-color: #ff3333;
+}
+
+.contact-item {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.contact-item > p {
+  padding: 0;
+}
+
+.footer p {
+  color: #ffffff;
+  font-size: 12pt;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 15px 0;
+}

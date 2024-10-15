@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trung tâm Ngoại ngữ UP - Dạy Thật - Học Thật</title>
+    <style>
+      /* Các style đã có giữ nguyên */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo-container {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+      }
+      .logo {
+        height: 40px;
+        margin-right: 10px;
+      }
+      .center-name {
+        font-size: 1.2rem;
+        white-space: nowrap;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+      }
+      nav ul li {
+        margin-left: 20px;
+      }
+      nav ul li a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+      }
+      .hamburger span {
+        height: 3px;
+        width: 25px;
+        background: #333;
+        margin: 2px 0;
+        display: block;
+      }
+      .hero {
+        background-image: url("/api/placeholder/1200/400");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 4rem 2rem;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        padding: 0.8rem 2rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+      .cta-button:hover {
+        background-color: #0056b3;
+      }
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 2rem;
+      }
+      .feature-box {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 1.5rem;
+        width: calc(33.33% - 2rem);
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      .courses {
+        padding: 2rem;
+      }
+      .course-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+      .course-card {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 1.5rem;
+        text-align: center;
+      }
+      .testimonials {
+        background-color: #f8f9fa;
+        padding: 2rem;
+      }
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      .testimonial-card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        text-align: center;
+      }
+      .testimonial-card img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+      .cta-section {
+        text-align: center;
+        padding: 2rem;
+        background-color: #e9ecef;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+      footer ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      footer ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+      footer ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      @media (max-width: 768px) {
+        .hamburger {
+          display: flex;
+        }
+        nav ul {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 70px;
+          right: 0;
+          background-color: #ffffff;
+          width: 100%;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul.show {
+          display: flex;
+        }
+        nav ul li {
+          margin: 0;
+          text-align: center;
+        }
+        nav ul li a {
+          display: block;
+          padding: 1rem;
+        }
+        .center-name {
+          font-size: 1rem;
+        }
+        .feature-box {
+          width: 100%;
+        }
+        .testimonial-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="/api/placeholder/40/40" alt="UP Logo" class="logo" />
+        <h1 class="center-name">Trung tâm Ngoại ngữ UP</h1>
+      </div>
+      <nav>
+        <ul id="menu">
+          <li><a href="#intro">Giới thiệu</a></li>
+          <li><a href="#courses">Chương trình</a></li>
+          <li><a href="#environment">Cơ sở vật chất</a></li>
+          <li><a href="#teachers">Giáo viên</a></li>
+          <li><a href="#" class="sign-up">Đăng kí ngay</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Dạy Thật - Học Thật</h1>
+      <p>Khám phá tiềm năng ngôn ngữ của bạn cùng Trung tâm Ngoại ngữ UP</p>
+      <a href="#register" class="cta-button">Đăng ký ngay</a>
+    </section>
+
+    <section class="features">
+      <div class="feature-box">
+        <h3>Đa dạng và toàn diện</h3>
+        <p>
+          Từ trẻ em đến người trưởng thành, từ người mới bắt đầu đến chuyên gia
+          - UP có khóa học phù hợp cho mọi nhu cầu và trình độ.
+        </p>
+      </div>
+      <div class="feature-box">
+        <h3>Cam kết chất lượng đầu ra</h3>
+        <p>
+          Chúng tôi tự tin cam kết đầu ra cho các khóa học IELTS và TOEIC, đảm
+          bảo sự tiến bộ rõ rệt của học viên.
+        </p>
+      </div>
+      <div class="feature-box">
+        <h3>Phương pháp giảng dạy độc quyền và linh hoạt</h3>
+        <p>
+          Chương trình học độc quyền được phát triển bởi đội ngũ giáo viên giàu
+          kinh nghiệm, linh hoạt điều chỉnh theo nhu cầu của từng học viên.
+        </p>
+      </div>
+      <div class="feature-box">
+        <h3>Môi trường học tập hiện đại và đa dạng</h3>
+        <p>
+          Kết hợp học online và offline (hybrid) cùng công nghệ hỗ trợ tiên tiến
+          như ELSA, Quizlet, tạo nên trải nghiệm học tập tối ưu.
+        </p>
+      </div>
+      <div class="feature-box">
+        <h3>Tập trung vào kỹ năng thực tế và chuẩn bị cho tương lai</h3>
+        <p>
+          Chú trọng phát triển kỹ năng giao tiếp thực tế và chuẩn bị kỹ lưỡng
+          cho các kỳ thi quốc tế, đảm bảo học viên tự tin trong học tập và công
+          việc.
+        </p>
+      </div>
+    </section>
+
+    <section class="courses">
+      <h2>Khóa học nổi bật</h2>
+      <div class="course-grid">
+        <div class="course-card">
+          <h3>Tiếng Anh Giao tiếp Cấp tốc</h3>
+        </div>
+        <div class="course-card">
+          <h3>Tiếng Anh Nền tảng Bốn kỹ năng</h3>
+        </div>
+        <div class="course-card">
+          <h3>TOEIC Cấp tốc 2 Kỹ năng</h3>
+        </div>
+        <div class="course-card">
+          <h3>Tiếng Anh Cấp 1 và Cấp 2</h3>
+        </div>
+        <div class="course-card">
+          <h3>Tiếng Anh KIDS</h3>
+        </div>
+        <div class="course-card">
+          <h3>Tiếng Anh TEENS</h3>
+        </div>
+        <div class="course-card">
+          <h3>IELTS</h3>
+        </div>
+        <div class="course-card">
+          <h3>Fun with English</h3>
+        </div>
+        <div class="course-card">
+          <h3>Preschool</h3>
+        </div>
+        <div class="course-card">
+          <h3>Speaking 100% (Luyện nói 100%)</h3>
+        </div>
+        <div class="course-card">
+          <h3>Tiếng Anh Doanh nghiệp</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Đánh giá của học viên</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <img src="/api/placeholder/80/80" alt="Avatar học viên 1" />
+          <h3>Nguyễn Văn A</h3>
+          <p>
+            "Chất lượng giảng dạy tại UP thực sự ấn tượng. Tôi đã cải thiện kỹ
+            năng tiếng Anh rất nhiều sau khóa học."
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <img src="/api/placeholder/80/80" alt="Avatar học viên 2" />
+          <h3>Trần Thị B</h3>
+          <p>
+            "Giáo viên nhiệt tình, lớp học vui vẻ và hiệu quả. UP đã giúp tôi tự
+            tin hơn khi giao tiếp bằng tiếng Anh."
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <img src="/api/placeholder/80/80" alt="Avatar học viên 3" />
+          <h3>Lê Văn C</h3>
+          <p>
+            "Phương pháp giảng dạy tại UP rất phù hợp với người đi làm như tôi.
+            Tôi đã đạt được mục tiêu TOEIC mong muốn."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>
+        Hãy đăng ký để được tư vấn miễn phí và tìm ra khóa học phù hợp nhất!
+      </h2>
+      <a href="#consult" class="cta-button">Đăng ký tư vấn miễn phí</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Trung tâm Ngoại ngữ UP. Bảo lưu mọi quyền.</p>
+      <ul>
+        <li><a href="#home">Trang chủ</a></li>
+        <li><a href="#courses">Khóa học</a></li>
+        <li><a href="#about">Về chúng tôi</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+        <li><a href="#privacy">Chính sách bảo mật</a></li>
+      </ul>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
