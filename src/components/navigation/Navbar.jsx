@@ -17,7 +17,9 @@ const Navbar = () => {
     <header className="">
       <nav>
         <div className="nav-logo-container">
-          <img src={logoImg} alt="" height={120} width={120} />
+          <a href="/">
+            <img src={logoImg} alt="" height={120} width={120} />
+          </a>
         </div>
         <div className="navbar-links-container">
           <a href="#intro">Giới thiệu</a>
