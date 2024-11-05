@@ -46,7 +46,7 @@
 }
 
 .service-item:hover {
-  background-image: url(/public/assets/images/background.png);
+  background-image: url(/assets/images/background.png);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,41 +81,41 @@
 }
 
 .first-service .icon {
-  background-image: url(/public/assets/icons/study-group.png);
+  background-image: url(/assets/icons/study-group.png);
   background-size: cover;
 }
 
 .first-service:hover .icon {
   background-size: cover;
-  background-image: url(/public/assets/icons/study-group-2.png);
+  background-image: url(/assets/icons/study-group-2.png);
 }
 
 .second-service .icon {
   background-size: cover;
-  background-image: url(/public/assets/icons/notebook-2.png);
+  background-image: url(/assets/icons/notebook-2.png);
 }
 
 .second-service:hover .icon {
   background-size: cover;
-  background-image: url(/public/assets/icons/notebook.png);
+  background-image: url(/assets/icons/notebook.png);
 }
 
 .third-service .icon {
   background-size: cover;
-  background-image: url(/public/assets/icons/graduation.png);
+  background-image: url(/assets/icons/graduation.png);
 }
 
 .third-service:hover .icon {
   background-size: cover;
-  background-image: url(/public/assets/icons/graduation-2.png);
+  background-image: url(/assets/icons/graduation-2.png);
 }
 
 .fourth-service .icon {
   background-size: cover;
-  background-image: url(/public/assets/icons/teacher.png);
+  background-image: url(/assets/icons/teacher.png);
 }
 
 .fourth-service:hover .icon {
   background-size: cover;
-  background-image: url(/public/assets/icons/teacher-2.png);
+  background-image: url(/assets/icons/teacher-2.png);
 }

@@ -3,7 +3,7 @@ export const apiKey = ["AIzaSyAyNJ7Bm0D7gHhKV8JiLiXlXiCx4xCkWG0"];
 export const dataHeading = ["UP English là cơ sở giảng dạy tiếng Anh được thành lập từ năm 2017 với chương trình và phương pháp giảng dạy được trực tiếp phát triển bởi thầy Nguyễn Huỳnh Quân (giáo viên với 10 năm kinh nghiệm giảng dạy trực tiếp) cùng một số giáo viên dày dặn kinh nghiệm khác. UP luôn phấn đấu thay đổi mình từng ngày với mong muốn được quý học viên và phụ huynh tin, chọn và ở lại với UP vì chất lượng giảng dạy uy tín cùng các bài học thú vị, thiết thực và bổ ích. Mỗi bài học đều là tâm huyết nhằm mang đến cho học viên những giây phút học hiệu quả nhưng vẫn thoải mái, không áp lực."];
 export const fadeImages = [
     {
-      url: "https://scontent.fsgn2-11.fna.fbcdn.net/v/t39.30808-6/423583022_850642973742566_5269666877175856177_n.png?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeFMrFin7_V0YkWbr05iRefU3GHGl1U6v6ncYcaXVTq_qbcShUYiPteObyRHA_GnrQ9ptFJgzXkKyGrbBLIMYTyQ&_nc_ohc=aTfbUrHoWDoQ7kNvgGwu0ya&_nc_zt=23&_nc_ht=scontent.fsgn2-11.fna&_nc_gid=Awi24kRcycA35OuvnxNP365&oh=00_AYBc4EBIF9HKJppksFJjn47vI708GTFAsolnV4S5zb-P-g&oe=6713AAE7",
+      url: "/assets/images/head1.heic",
       title: "First Slide",
       content:
         "Creating social media posts is a great way to hone your content writing skills. Since posts are typically very short, snappy, and quick, you can easily try out different styles of writing and see what people respond to. It’s easy to change direction and adapt if you need to tweak your writing style since social media posts are typically fluid and changeable by nature. You can also practice A/B testing with your social media ads—try writing two different posts and sending it to similar demographics and see which one performs better.",
@@ -82,25 +82,42 @@ export const fadeImages = [
 
   export const listTeacher =  [
     {
-      teacherImgUrl: "https://st2.depositphotos.com/3143277/8644/i/450/depositphotos_86446164-Business-man-in-office.jpg", 
-      teacherDesc: "Nguyễn Huỳnh Quân",
+      teacherImgUrl: "/assets/images/1.png", 
+      teacherDesc: "Nguyễn Ngọc",
     },
     {
-      teacherImgUrl: "https://st.depositphotos.com/1144472/1971/i/450/depositphotos_19714321-stock-photo-young-happy-smiling-business-man.jpg", 
+      teacherImgUrl: "/assets/images/2.png", 
+      teacherDesc: "Võ Nhân",
+    },
+    {
+      teacherImgUrl: "/assets/images/3.png", 
+      teacherDesc: "Vũ Nhung",
+    },
+    {
+      teacherImgUrl: "/assets/images/4.png", 
       teacherDesc: "Gia Bảo",
     },
     {
-      teacherImgUrl: "https://img.freepik.com/free-photo/brunette-businesswoman-with-wavy-long-hair-blue-eyes-stands-holding-notebook-hands-smiles-widely_197531-346.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1728864000&semt=ais_hybrid-rr-similar", 
-      teacherDesc: "Võ Thị Nhàn",
+      teacherImgUrl: "/assets/images/5.png", 
+      teacherDesc: "Anh Tuấn",
     },
     {
-      teacherImgUrl: "https://cdn.create.vista.com/api/media/small/12765264/stock-photo-smiling-business-man", 
+      teacherImgUrl: "/assets/images/6.png", 
       teacherDesc: "Gia Linh",
     },
     {
-      teacherImgUrl: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", 
+      teacherImgUrl: "/assets/images/7.png", 
+      teacherDesc: "Elena",
+    },
+    {
+      teacherImgUrl: "/assets/images/8.png", 
       teacherDesc: "Alfred",
     },
+    {
+      teacherImgUrl: "/assets/images/9.png", 
+      teacherDesc: "Nguyễn Huỳnh Quân",
+    },
+    
   ];
 
   export const listEnvironment = [
