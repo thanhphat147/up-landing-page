@@ -1,5 +1,5 @@
 export const navLists = ["Giới thiệu", "Chương trình", "Cơ sở vật chất", "Giáo viên"];
-export const apiKey = ["AIzaSyAyNJ7Bm0D7gHhKV8JiLiXlXiCx4xCkWG0"];
+export const maptileKey = ["zETc7rYLEJp150nCxjkw3vjm0sdRaPIlIgrNNCLz"];
 export const dataHeading = ["UP English là cơ sở giảng dạy tiếng Anh được thành lập từ năm 2017 với chương trình và phương pháp giảng dạy được trực tiếp phát triển bởi thầy Nguyễn Huỳnh Quân (giáo viên với 10 năm kinh nghiệm giảng dạy trực tiếp) cùng một số giáo viên dày dặn kinh nghiệm khác. UP luôn phấn đấu thay đổi mình từng ngày với mong muốn được quý học viên và phụ huynh tin, chọn và ở lại với UP vì chất lượng giảng dạy uy tín cùng các bài học thú vị, thiết thực và bổ ích. Mỗi bài học đều là tâm huyết nhằm mang đến cho học viên những giây phút học hiệu quả nhưng vẫn thoải mái, không áp lực."];
 export const fadeImages = [
     {

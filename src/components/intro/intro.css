@@ -42,7 +42,7 @@
   border-radius: 10px;
   border-top-right-radius: 50px;
   transition: all 0.3s;
-  height: 350px;
+  height: 200px;
 }
 
 .service-item:hover {
@@ -54,7 +54,7 @@
 
 .service-item .icon {
   margin-left: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   background-repeat: no-repeat;
   width: 50px;
   height: 50px;

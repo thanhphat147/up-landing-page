@@ -35,3 +35,8 @@
 .nav-item:hover {
   background-color: #f3e2e2;
 }
+
+.marker {
+  width: 25px;
+  height: 25px;
+}

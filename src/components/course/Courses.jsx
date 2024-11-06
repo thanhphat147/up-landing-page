@@ -17,11 +17,11 @@ const Courses = () => {
                 <div className="card-content">
                   <h4 className="course-header">{course.courseHeader}</h4>
                   <div className="card-body">
-                    {/* <p className="course-title">{course.courseTitle}</p> */}
-                    <div class="age-range">
-                      <p>{course.ageRange}</p>
-                    </div>
+                    <p className="course-title">{course.courseTitle}</p>
                   </div>
+                </div>
+                <div class="age-range">
+                  <p>{course.ageRange}</p>
                 </div>
               </div>
             </Col>

@@ -1,40 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../footer/footer.css";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
-import { APIProvider, Map } from "@vis.gl/react-google-maps";
-import { apiKey } from "../../constants";
+import ReactMapGL, { Marker } from "@goongmaps/goong-map-react";
+import "@goongmaps/goong-js/dist/goong-js.css";
 
 const Footer = () => {
+  const [viewport, setViewport] = useState({
+    width: "100%",
+    height: 450,
+
+    zoom: 18,
+  });
   return (
     <div className="footer">
       <div className="contact-info" id="contact">
         <Container>
-          {/* <Row>
-            <Col>
-              <div className="contact-item">
-                <h4>Cơ sở 1</h4>
-                <p>Điện thoại cơ sở 1 + Zalo (Phú Cường): 039 591 7986</p>
-                <p>
-                  Địa chỉ: UP English: 82 Ngô Chí Quốc, Phú Cường, Thủ Dầu Một,
-                  Bình Dương
-                </p>
-              </div>
-            </Col>
-            <Col></Col>
-            <Col>
-              <div className="contact-item">
-                <h4>Cơ sở 2</h4>
-                <p>Điện thoại cơ sở 2 + Zalo (Phú Hòa): 039 250 7086</p>
-                <p>
-                  Địa chỉ: UP English: 97, đường D1, khu dân cư Phú Hòa 1, TP.
-                  Thủ Dầu Một, Bình Dương
-                </p>
-              </div>
-            </Col>
-            <Col>
-              <div className="contact-item"></div>
-            </Col>
-          </Row> */}
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Row>
               <Col>
@@ -46,6 +26,7 @@ const Footer = () => {
                         <p>
                           82 Ngô Chí Quốc, Phú Cường, Thủ Dầu Một, Bình Dương
                         </p>
+                        <p>039 591 7986</p>
                       </div>
                     </Nav.Link>
                   </Nav.Item>
@@ -57,6 +38,7 @@ const Footer = () => {
                           97, đường D1, khu dân cư Phú Hòa 1, TP. Thủ Dầu Một,
                           Bình Dương
                         </p>
+                        <p>039 250 7086</p>
                       </div>
                     </Nav.Link>
                   </Nav.Item>
@@ -65,24 +47,34 @@ const Footer = () => {
               <Col sm={9}>
                 <Tab.Content>
                   <Tab.Pane eventKey="first">
-                    <APIProvider apiKey={apiKey}>
-                      <Map
-                        style={{ width: "1000px", height: "400px" }}
-                        defaultCenter={{ lat: 10.9844625, lng: 106.651017 }}
-                        defaultZoom={14}
-                        mapId={"e992788f54c31984"}
-                      />
-                    </APIProvider>
+                    <ReactMapGL
+                      goongApiAccessToken="zETc7rYLEJp150nCxjkw3vjm0sdRaPIlIgrNNCLz"
+                      {...viewport}
+                      latitude={10.9844625}
+                      longitude={106.651017}
+                      onViewportChange={(nextViewport) =>
+                        setViewport(nextViewport)
+                      }
+                    >
+                      <Marker latitude={10.9844625} longitude={106.651017}>
+                        <img className="marker" src="/assets/icons/pin.png" />
+                      </Marker>
+                    </ReactMapGL>
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
-                    <APIProvider apiKey={apiKey}>
-                      <Map
-                        style={{ width: "1000px", height: "400px" }}
-                        center={{ lat: 10.9741243, lng: 106.6767308 }}
-                        zoom={14}
-                        mapId={"e992788f54c31984"}
-                      />
-                    </APIProvider>
+                    <ReactMapGL
+                      goongApiAccessToken="zETc7rYLEJp150nCxjkw3vjm0sdRaPIlIgrNNCLz"
+                      {...viewport}
+                      latitude={10.9737355}
+                      longitude={106.6792115}
+                      onViewportChange={(nextViewport) =>
+                        setViewport(nextViewport)
+                      }
+                    >
+                      <Marker latitude={10.9737355} longitude={106.6792115}>
+                        <img className="marker" src="/assets/icons/pin.png" />
+                      </Marker>
+                    </ReactMapGL>
                   </Tab.Pane>
                 </Tab.Content>
               </Col>
