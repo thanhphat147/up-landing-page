@@ -5,14 +5,15 @@
 .card {
   color: rgb(255, 255, 255);
   background-size: cover;
-  padding: 10rem 0 0;
-  width: 32ch;
-  min-height: 40ch;
-  max-height: 45ch;
+  padding: 10rem 0;
+  width: 35ch;
+  min-height: 48ch;
+  max-height: 50ch;
   overflow: hidden;
   transition: transform 500ms ease;
   border: none !important;
   border-radius: 0.5rem;
+  margin: 10px auto;
 }
 
 .card:hover,
@@ -21,7 +22,7 @@
 }
 
 .card-content {
-  --padding: 3rem;
+  --padding: 2.2rem;
   padding: var(--padding);
   background: linear-gradient(
     hsl(0 0% 0% / 0),
@@ -33,7 +34,7 @@
 .course-header {
   position: relative;
   width: max-content;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 5px auto;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.25rem;
@@ -41,12 +42,14 @@
 
 .course-title {
   font-size: 10pt;
+  white-space: pre-line;
+  font-weight: 500;
 }
 
 .age-range {
   padding: 20px;
   background: transparent;
-  background-color: #f0dddb;
+  background-color: #ff2c2c;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -62,7 +65,7 @@
   margin: 0;
   font-weight: 800;
   text-transform: uppercase;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .card:hover .course-header::after,
