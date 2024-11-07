@@ -13,7 +13,7 @@ const Header = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     cssEase: "linear",
     lazyLoad: true,
     arrows: false,

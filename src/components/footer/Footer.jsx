@@ -65,13 +65,13 @@ const Footer = () => {
                     <ReactMapGL
                       goongApiAccessToken="zETc7rYLEJp150nCxjkw3vjm0sdRaPIlIgrNNCLz"
                       {...viewport}
-                      latitude={10.9737355}
-                      longitude={106.6792115}
+                      latitude={10.9740841}
+                      longitude={106.6792344}
                       onViewportChange={(nextViewport) =>
                         setViewport(nextViewport)
                       }
                     >
-                      <Marker latitude={10.9737355} longitude={106.6792115}>
+                      <Marker latitude={10.9740841} longitude={106.6792344}>
                         <img className="marker" src="/assets/icons/pin.png" />
                       </Marker>
                     </ReactMapGL>
