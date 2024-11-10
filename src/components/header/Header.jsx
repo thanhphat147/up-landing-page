@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <div className="slide-img-container">
+    <div className="slide-img-container" id="home">
       <Slider {...settings}>
         {fadeImages.map((fadeImage, index) => (
           <div className="each-slide" key={index}>

@@ -82,7 +82,7 @@ const Footer = () => {
           </Tab.Container>
         </Container>
       </div>
-      <div>
+      <div className="footer-copyright">
         <p>Copyright © 2024 UP English. All Rights Reserved.</p>
       </div>
     </div>

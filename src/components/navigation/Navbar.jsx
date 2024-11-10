@@ -1,4 +1,5 @@
 import React from "react";
+import "../navigation/navbar.css";
 import { logoImg } from "../../utils";
 import { navLists } from "../../constants";
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -14,10 +15,10 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = React.useState(false);
 
   return (
-    <header className="">
+    <header>
       <nav>
         <div className="nav-logo-container">
-          <a href="/">
+          <a href="#home">
             <img src={logoImg} alt="" height={60} width={60} />
           </a>
         </div>

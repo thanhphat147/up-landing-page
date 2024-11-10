@@ -7,7 +7,7 @@
   background-size: cover;
   padding: 10rem 0;
   width: 35ch;
-  min-height: 48ch;
+  min-height: 50ch;
   max-height: 50ch;
   overflow: hidden;
   transition: transform 500ms ease;
@@ -22,19 +22,21 @@
 }
 
 .card-content {
-  --padding: 2.2rem;
+  --padding: 2rem;
   padding: var(--padding);
   background: linear-gradient(
     hsl(0 0% 0% / 0),
     hsl(20 0% 0% / 0.3) 20%,
     hsl(0 0% 0% / 1)
   );
+  min-height: 35ch;
+  max-height: 35ch;
 }
 
 .course-header {
   position: relative;
   width: max-content;
-  margin: 0 auto 5px auto;
+  margin: 0 auto;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.25rem;
