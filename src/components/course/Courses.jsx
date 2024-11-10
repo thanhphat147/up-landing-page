@@ -9,7 +9,7 @@ const Courses = () => {
       <Container>
         <Row>
           {courseContent.map((course, index) => (
-            <Col style={{ margin: "10px" }} key={index}>
+            <Col key={index}>
               <div
                 className="card"
                 style={{ backgroundImage: `url(${course.courseImgUrl})` }}

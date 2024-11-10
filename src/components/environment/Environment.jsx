@@ -16,12 +16,22 @@ const Environment = () => {
     autoplaySpeed: 5000,
     lazyLoad: true,
     centerMode: true,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          centerMode: false,
+          arrows: false,
+        },
+      },
+    ],
   };
 
   return (
     <div className="section-environment" id="environment">
       <Container className="environment-heading">
-        <h2>Không gian học thoải mái</h2>
+        <h3>Không gian học thoải mái</h3>
       </Container>
       <Container className="slider-container">
         <Slider {...settings}>

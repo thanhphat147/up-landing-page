@@ -33,6 +33,11 @@
   height: 2px;
 }
 
+.service-card {
+  padding: auto;
+  margin: 0 auto;
+}
+
 .service-item {
   position: relative;
   z-index: 1;
@@ -53,7 +58,6 @@
 }
 
 .service-item .icon {
-  margin-left: 0px;
   margin-bottom: 15px;
   background-repeat: no-repeat;
   width: 50px;
@@ -66,12 +70,6 @@
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
-}
-
-.service-item p {
-  transition: all 0.3s;
-  font-size: 15px;
-  margin-bottom: 20px;
 }
 
 .service-item:hover h4,
@@ -118,4 +116,72 @@
 .fourth-service:hover .icon {
   background-size: cover;
   background-image: url(/assets/icons/teacher-2.png);
+}
+
+@media (max-width: 1000px) {
+  .intro-heading h1 {
+    font-size: 14pt;
+  }
+
+  .intro-heading h1 em {
+    font-size: 14pt;
+  }
+
+  .intro-heading p {
+    font-size: 10pt;
+  }
+
+  .service-item {
+    width: 250px;
+    height: 270px;
+    margin: 10px auto;
+  }
+
+  .service-item .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .service-item h4 {
+    font-size: 20pt;
+  }
+}
+@media (max-width: 800px) {
+  .intro-heading {
+    margin: 0 auto 40px auto;
+  }
+  .service-item {
+    width: 250px;
+    height: 270px;
+    margin: 10px auto;
+  }
+
+  .service-item .icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .service-item h4 {
+    font-size: 20pt;
+  }
+}
+
+@media (max-width: 450px) {
+  .service-item {
+    width: 150px;
+    height: 200px;
+    margin: 5px auto;
+  }
+  .service-item .icon {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 15px;
+  }
+
+  .service-item h4 {
+    font-size: 13pt;
+    margin-bottom: 5px;
+  }
 }

@@ -22,19 +22,19 @@ const Intro = () => {
               <h4>CHƯƠNG TRÌNH ĐA DẠNG VÀ TOÀN DIỆN</h4>
             </div>
           </Col>
-          <Col>
+          <Col className="service-card">
             <div className="service-item second-service">
               <div className="icon"></div>
               <h4>PHƯƠNG PHÁP GIẢNG DẠY LINH HOẠT</h4>
             </div>
           </Col>
-          <Col>
+          <Col className="service-card">
             <div className="service-item third-service">
               <div className="icon"></div>
               <h4>CAM KẾT CHẤT LƯỢNG ĐẦU RA</h4>
             </div>
           </Col>
-          <Col>
+          <Col className="service-card">
             <div className="service-item fourth-service">
               <div className="icon"></div>
               <h4>GIÁO VIÊN DÀY DẶN KINH NGHIỆM</h4>

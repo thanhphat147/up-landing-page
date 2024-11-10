@@ -16,12 +16,26 @@ const Teacher = () => {
     autoplay: true,
     autoplaySpeed: 0,
     centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className="section-teacher" id="teachers">
       <Container className="teacher-heading">
-        <h2>GIÁO VIÊN DÀY DẶN KINH NGHIỆM</h2>
+        <h3>GIÁO VIÊN DÀY DẶN KINH NGHIỆM</h3>
       </Container>
       <Container>
         <div className="slider-teacher">

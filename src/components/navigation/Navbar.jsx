@@ -22,13 +22,12 @@ const Navbar = () => {
             <img src={logoImg} alt="" height={60} width={60} />
           </a>
         </div>
-        <div className="navbar-links-container">
-          <a href="#intro">Giới thiệu</a>
-          <a href="#courses">Chương trình học</a>
-          <a href="#environment">Cơ sở vật chất</a>
-          <a href="#teachers">Giáo Viên</a>
-          <a href="#contact">Liên Hệ</a>
-        </div>
+        {navLists.map((nav) => (
+          <div className="navbar-links-container">
+            <a href={nav.link}>{nav.title}</a>
+          </div>
+        ))}
+
         <div className="navbar-menu-container">
           <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
         </div>
@@ -45,9 +44,14 @@ const Navbar = () => {
           >
             <List>
               {navLists.map((nav) => (
-                <ListItem key={nav} disablePadding>
+                <ListItem
+                  component="a"
+                  href={nav.link}
+                  key={nav}
+                  disablePadding
+                >
                   <ListItemButton>
-                    <ListItemText primary={nav} />
+                    <ListItemText primary={nav.title} />
                   </ListItemButton>
                 </ListItem>
               ))}

@@ -1,11 +1,8 @@
 .section-teacher {
-  margin: 50px 0;
+  margin: 80px 0 50px 0;
 }
 
-.slider-teacher {
-}
-
-.teacher-heading h2 {
+.teacher-heading h3 {
   color: #ff1700;
   text-align: center;
   font-weight: 700;
@@ -18,10 +15,11 @@
 
 .teacher-item > div img {
   max-height: 500px;
+  min-height: 400px;
   object-fit: cover;
-  min-height: 500px;
   padding: 0 10px;
   border-radius: 30px;
+  width: 100%;
 }
 
 .teacher-content {
@@ -33,4 +31,27 @@
 
 .teacher-content h4 {
   font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .teacher-content h4 {
+    font-weight: 700;
+    font-size: 16pt;
+  }
+}
+
+@media (max-width: 800px) {
+  .teacher-content h4 {
+    font-size: 15pt;
+  }
+}
+
+@media (max-width: 450px) {
+  .teacher-item > div img {
+    max-height: 300px;
+    min-height: 300px;
+  }
+  .teacher-content h4 {
+    font-size: 13pt;
+  }
 }

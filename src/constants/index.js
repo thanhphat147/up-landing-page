@@ -1,4 +1,25 @@
-export const navLists = ["Giới thiệu", "Chương trình", "Cơ sở vật chất", "Giáo viên"];
+export const navLists = [
+  {
+    link: "#intro",
+    title: "Giới thiệu"
+  },
+  {
+    link: "#courses",
+    title: "Chương trình"
+  },
+  {
+    link: "#environment",
+    title: "Cơ sở vật chất"
+  },
+  {
+    link: "#teachers",
+    title: "Giáo viên"
+  },
+  {
+    link: "#contact",
+    title: "Liên Hệ"
+  },
+];
 export const dataHeading = ["UP English là cơ sở giảng dạy tiếng Anh được thành lập từ năm 2017 với chương trình và phương pháp giảng dạy được trực tiếp phát triển bởi thầy Nguyễn Huỳnh Quân (giáo viên với 10 năm kinh nghiệm giảng dạy trực tiếp) cùng một số giáo viên dày dặn kinh nghiệm khác. UP luôn phấn đấu thay đổi mình từng ngày với mong muốn được quý học viên và phụ huynh tin, chọn và ở lại với UP vì chất lượng giảng dạy uy tín cùng các bài học thú vị, thiết thực và bổ ích. Mỗi bài học đều là tâm huyết nhằm mang đến cho học viên những giây phút học hiệu quả nhưng vẫn thoải mái, không áp lực."];
 export const fadeImages = [
     {
@@ -82,39 +103,39 @@ export const fadeImages = [
   export const listTeacher =  [
     {
       teacherImgUrl: "/assets/images/1.png", 
-      teacherDesc: "Nguyễn Thị Thanh Ngọc",
+      teacherDesc: "Ms. Thanh Ngọc",
     },
     {
       teacherImgUrl: "/assets/images/2.png", 
-      teacherDesc: "Võ Thành Nhân",
+      teacherDesc: "Mr. Thành Nhân",
     },
     {
       teacherImgUrl: "/assets/images/3.png", 
-      teacherDesc: "Vũ Thị Hồng Nhung",
+      teacherDesc: "Ms. Hồng Nhung",
     },
     {
       teacherImgUrl: "/assets/images/4.png", 
-      teacherDesc: "Hoàng Lê Gia Bảo",
+      teacherDesc: "Ms. Gia Bảo",
     },
     {
       teacherImgUrl: "/assets/images/5.png", 
-      teacherDesc: "Nguyễn Lê Anh Tuấn",
+      teacherDesc: "Mr. Anh Tuấn",
     },
     {
       teacherImgUrl: "/assets/images/6.png", 
-      teacherDesc: "Dương Diệp Gia Linh",
+      teacherDesc: "Ms. Gia Linh",
     },
     {
       teacherImgUrl: "/assets/images/7.png", 
-      teacherDesc: "Elena",
+      teacherDesc: "Ms. Elena",
     },
     {
       teacherImgUrl: "/assets/images/8.png", 
-      teacherDesc: "Alfred",
+      teacherDesc: "Mr. Alfred",
     },
     {
       teacherImgUrl: "/assets/images/9.png", 
-      teacherDesc: "Nguyễn Huỳnh Quân",
+      teacherDesc: "Mr. Huỳnh Quân",
     },
     
   ];

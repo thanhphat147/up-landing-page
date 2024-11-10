@@ -17,6 +17,14 @@ const Header = () => {
     cssEase: "linear",
     lazyLoad: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          dots: false,
+        },
+      },
+    ],
   };
 
   return (

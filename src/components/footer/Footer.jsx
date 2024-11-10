@@ -7,9 +7,9 @@ import "@goongmaps/goong-js/dist/goong-js.css";
 const Footer = () => {
   const [viewport, setViewport] = useState({
     width: "100%",
-    height: 450,
-
-    zoom: 18,
+    height: 350,
+    zoom: 16,
+    transitionDuration: 5000,
   });
   return (
     <div className="footer">
@@ -23,10 +23,10 @@ const Footer = () => {
                     <Nav.Link eventKey="first">
                       <div className="contact-item">
                         <h4>UP Phú Cường</h4>
+                        <p>039 591 7986</p>
                         <p>
                           82 Ngô Chí Quốc, Phú Cường, Thủ Dầu Một, Bình Dương
                         </p>
-                        <p>039 591 7986</p>
                       </div>
                     </Nav.Link>
                   </Nav.Item>
@@ -34,17 +34,17 @@ const Footer = () => {
                     <Nav.Link eventKey="second">
                       <div className="contact-item">
                         <h4>UP Phú Hòa</h4>
+                        <p>039 250 7086</p>
                         <p>
                           97, đường D1, khu dân cư Phú Hòa 1, TP. Thủ Dầu Một,
                           Bình Dương
                         </p>
-                        <p>039 250 7086</p>
                       </div>
                     </Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Col>
-              <Col sm={9}>
+              <Col>
                 <Tab.Content>
                   <Tab.Pane eventKey="first">
                     <ReactMapGL

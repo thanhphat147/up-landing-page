@@ -8,24 +8,20 @@
 }
 
 .contact-item {
-  padding-top: 40px;
+  padding-top: 5px;
   text-align: center;
-}
-
-.contact-item > p {
-  padding: 0;
 }
 
 .footer p {
   color: #000000;
-  font-size: 10pt;
+  font-size: 13pt;
   text-align: center;
   margin-bottom: 0;
   padding: 5px 0;
   font-weight: 500;
 }
 
-.nav-pills {
+.nav {
   --bs-nav-pills-link-active-bg: #ff3333;
 }
 
@@ -48,4 +44,49 @@
   font-size: 8pt;
   font-weight: 500;
   color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .tab-content {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav {
+    margin-top: 20px;
+  }
+  .tab-content {
+    width: 450px;
+  }
+  .contact-item h4 {
+    font-size: 16pt;
+  }
+  .contact-item p {
+    font-size: 10pt;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav {
+    max-width: 160px;
+    min-height: 100px;
+    max-height: 100px;
+    --bs-nav-link-padding-x: 0;
+    margin: 0 20px;
+  }
+
+  .contact-item h4 {
+    font-size: 10pt;
+    margin: 0;
+  }
+  .contact-item p {
+    font-size: 7pt;
+    margin: 0 5px;
+  }
+
+  .tab-content {
+    margin: 30px auto 10px auto;
+    width: 350px;
+  }
 }
