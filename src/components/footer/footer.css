@@ -46,6 +46,9 @@
   color: #ffffff;
 }
 
+.social-icon {
+}
+
 @media (max-width: 1000px) {
   .tab-content {
     margin-top: 30px;

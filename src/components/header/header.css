@@ -1,5 +1,5 @@
 .slide-img-container {
-  margin: 1rem 5rem 1rem 5rem;
+  margin: 1rem 2rem 1rem 2rem;
 }
 
 .each-slide {
@@ -12,8 +12,8 @@
 }
 
 .each-slide > div img {
-  max-height: 750px;
-  min-height: 750px;
+  max-height: 500px;
+  min-height: 500px;
   width: 100%;
   object-fit: contain;
   margin-left: auto !important;
@@ -111,7 +111,6 @@
 }
 
 @media (max-width: 450px) {
-  
   .each-slide {
     height: 300px;
     margin: 0 auto 0 auto;

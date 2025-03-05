@@ -34,16 +34,6 @@ const Header = () => {
           <div className="each-slide" key={index}>
             <div>
               <img src={fadeImage.url} />
-              {/* <div className="slider-content">
-                <div className="slider-caption">
-                  <div className="caption-title">
-                    <h1>{fadeImage.title}</h1>
-                  </div>
-                  <div className="caption-content">
-                    <p>{fadeImage.content}</p>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         ))}

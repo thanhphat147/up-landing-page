@@ -6,6 +6,7 @@ import Courses from "./course/Courses";
 import Environment from "./environment/Environment";
 import Teacher from "./teacher/Teacher";
 import Footer from "./footer/Footer";
+import Activities from "./activity/Activities";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Header />
       <Intro />
       <Courses />
+      <Activities />
       <Environment />
       <Teacher />
       <Footer />
