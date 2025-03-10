@@ -19,10 +19,11 @@ const Activities = () => {
     dots: true,
     responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 800,
         settings: {
           centerMode: false,
           arrows: false,
+          dots: false,
         },
       },
     ],

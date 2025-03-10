@@ -118,7 +118,7 @@
   background-image: url(/assets/icons/teacher-2.png);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .intro-heading h1 {
     font-size: 14pt;
   }
@@ -148,6 +148,9 @@
   }
 }
 @media (max-width: 800px) {
+  .section-intro {
+    margin-top: 0;
+  }
   .intro-heading {
     margin: 0 auto 40px auto;
   }

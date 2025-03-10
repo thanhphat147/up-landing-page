@@ -33,7 +33,19 @@
   font-weight: 700;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
+  .section-teacher {
+    margin: 50px 0;
+  }
+
+  .each-slide > div img {
+    max-height: 750px;
+    min-height: 150px;
+  }
+
+  .slider-content {
+    width: 600px;
+  }
   .teacher-content h4 {
     font-weight: 700;
     font-size: 16pt;

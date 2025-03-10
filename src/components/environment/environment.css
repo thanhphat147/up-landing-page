@@ -15,7 +15,7 @@
 }
 
 .environment-item > div img {
-  max-height: 650px;
+  max-height: 500px;
   object-fit: cover;
   min-height: 500px;
   padding: 0 10px;

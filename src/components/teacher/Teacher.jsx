@@ -37,7 +37,7 @@ const Teacher = () => {
       <Container className="teacher-heading">
         <h3>GIÁO VIÊN DÀY DẶN KINH NGHIỆM</h3>
       </Container>
-      <Container>
+      <Container className="teacher-frame">
         <div className="slider-teacher">
           <Slider {...settings}>
             {listTeacher.map((teacher, index) => (

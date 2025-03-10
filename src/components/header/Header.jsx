@@ -19,7 +19,7 @@ const Header = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           dots: false,
         },

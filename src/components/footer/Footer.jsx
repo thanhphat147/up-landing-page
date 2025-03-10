@@ -89,50 +89,54 @@ const Footer = () => {
           </Tab.Container>
         </Container>
       </div>
-      <div>
-        <div class="icon">
-          <a
-            href="https://www.facebook.com/upenglishvietnam"
-            className="facebook social"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faFacebook}
-              beat
-              size="2x"
-              style={{ color: "0866ff" }}
-            />
-          </a>
-        </div>
+      <div className="social-section">
+        <div className="card-panel">
+          <div className="social-box">
+            <div class="social-icon">
+              <a
+                href="https://www.facebook.com/upenglishvietnam"
+                className="facebook social"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  beat
+                  size="2x"
+                  style={{ color: "0866ff" }}
+                />
+              </a>
+            </div>
 
-        <div class="icon">
-          <a
-            href="http://m.me/312692635872372"
-            className="fb-messenger social"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faFacebookMessenger}
-              beat
-              size="2x"
-              style={{ color: "0866ff" }}
-            />
-          </a>
-        </div>
+            <div class="social-icon">
+              <a
+                href="https://www.tiktok.com/@upenglishvietnam"
+                className="tiktok social"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  icon={faTiktok}
+                  beat
+                  size="2x"
+                  style={{ color: "#000000" }}
+                />
+              </a>
+            </div>
 
-        <div class="icon">
-          <a
-            href="https://www.tiktok.com/@upenglishvietnam"
-            className="tiktok social"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faTiktok}
-              beat
-              size="2x"
-              style={{ color: "#000000" }}
-            />
-          </a>
+            <div class="social-icon">
+              <a
+                href="http://m.me/312692635872372"
+                className="fb-messenger social"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  icon={faFacebookMessenger}
+                  beat
+                  size="2x"
+                  style={{ color: "0866ff" }}
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div className="footer-copyright">
